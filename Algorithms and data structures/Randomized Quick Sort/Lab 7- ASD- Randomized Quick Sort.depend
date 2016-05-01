@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1386786817 source:e:\lab 7- asd- randomized quick sort\main.cpp
+	<iostream>
+	<cstdlib>
+	<time.h>
+

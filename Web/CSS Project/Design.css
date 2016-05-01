@@ -1,0 +1,279 @@
+html {
+    width: 100%;
+    height: 100%;    
+}
+
+body {
+    background-color: blanchedalmond;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+nav ul {
+    display: inline;
+    list-style: none;
+    text-align: left;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-family: Lora;
+    font-size: 0.9em;
+    background: rgba(0,0,0,0.05);
+    padding: 0.3em 0.5em;
+}
+
+nav ul li:hover {
+    background: rgba(0,0,0,0.6);
+    color: floralwhite;
+}
+
+nav ul li:hover a {
+    color: floralwhite;
+}
+
+nav ul li ul {
+    position: absolute;
+    top: 1.81em;
+    left: 0;
+    padding: 0;
+    width: 6.15em;
+    display: none;
+    z-index: 2;
+}
+
+nav ul li ul li {
+    display: block;
+    background: rgba(0,0,0,0.6);
+    color: floralwhite;
+}
+
+nav ul li ul li a {
+    color: floralwhite;
+}
+
+nav ul li ul li:hover a {
+    color: black;
+}
+
+nav ul li ul li:hover{
+    background: rgba(0,0,0,0.5);
+    color: black;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav {
+    margin: 1em 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.start {
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+
+.start .animation-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: bisque;
+    padding-left: 1.5em;
+}
+
+.start img {
+    width: 100%;
+    height: 100%;
+}
+
+.element{
+    margin: 0.05em;
+    width: 5em; 
+    display: inline-block;
+}
+
+section form {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 35%;
+    margin: 0.3em;
+    margin-left: 2em;
+    padding: 0.5em;
+}
+
+#promo {
+    position: relative;
+    width: 100%;
+}
+
+#promo iframe {
+    margin: 1.5em auto;
+    width: 560px;
+    height: 315px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+     -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+@media(max-width: 648px) {
+    #promo iframe {
+        width: 100%;
+    }
+        
+}
+
+@-webkit-keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+@keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.start .hero {
+    -webkit-animation-name: swing;
+    animation-name: swing;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.offers {
+    margin-bottom: 30px;
+}
+
+.offers img {
+    opacity: 0.8;
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.offers img:hover {
+    opacity: 1;   
+}
+
+.offers a {
+    color: chocolate;
+    font-weight: bold;
+}
+
+table {
+    text-align: center;
+    font-family: Lora;
+    border-collapse: collapse;
+    margin-left: 2em;
+    
+}
+
+table td, th {
+    border: 2px solid black;
+    padding: 0.7em;
+}
+
+footer {
+    background-color: darksalmon;
+    bottom: 0;
+    left: 0;
+    padding: 20px 2;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    font-family: Lora;
+}
+
+#gallery {
+    text-align: center;
+}
+
+#gallery .img-galerie {
+    display: inline-block;
+    width: 25%;
+    height: auto;
+}
+
+#gallery .img-galerie img {
+    width: 100%;
+    height: auto;
+}
+
+#gallery .img-galerie:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+#gallery figcaption {
+    font-size: 0.8em;
+}
+
+#quick-pres {
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#quick-pres p {
+    font-size: 1em;
+    color: darkred;
+}
